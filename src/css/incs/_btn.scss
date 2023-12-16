@@ -1,0 +1,94 @@
+.btn:not(.btn-bolid, .btn-circle) {
+  @apply h-[3.125rem] w-40 max-w-full;
+}
+@media screen and (max-width: 750px) {
+  .btn:not(.btn-bolid, .btn-circle) {
+    zoom: 90%;
+  }
+}
+.btn {
+  @apply rounded-md font-normal;
+}
+.btn.btn-neutral {
+  @apply text-secondary hover:bg-primary ease-in-out
+}
+
+.btn.btn-transparent {
+  @apply bg-transparent text-white border-transparent hover:bg-secondary hover:text-black;
+}
+.btn.btn-white {
+  @apply hover:bg-secondary
+}
+.btn.btn-bolid {
+  @apply h-3 w-3 rounded-md border-0;
+  min-height:0.5rem;
+}
+.btn.btn-bolid.active {
+  @apply bg-primary;
+}
+.swiper-pagination-bullet {
+  @apply duration-300 ease-in-out w-10 h-2 rounded-md relative overflow-hidden relative overflow-hidden bg-gray-dark;
+}
+.swiper-pagination-bullet:before {
+  content: "";
+  @apply block absolute inset-0;
+}
+.swiper-pagination-bullet-active {
+  background: rgba(#000, 0.4);
+}
+.swiper-pagination-bullet-active:before {
+  @apply bg-black;
+}
+/*
+.swiper-pagination-bullet {
+  @apply duration-300 ease-in-out w-10 h-2 rounded-md relative overflow-hidden relative overflow-hidden bg-gray-dark;
+}
+.swiper-pagination-bullet:before {
+  content: "";
+  @apply block absolute inset-0;
+}
+.swiper-pagination-bullet-active {
+  background: rgba(#000, 0.4);
+}
+.swiper-pagination-bullet-active:before {
+  @apply bg-primary;
+  animation: slide-progress 5s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+.swiper-pagination-bullet-active.swiper-paused:before {
+  animation-play-state: paused;
+}
+@keyframes slide-progress {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  @apply -bottom-10;
+}
+.x-banner .swiper.swiper-horizontal {
+  overflow-y: visible;
+}
+*/
+.swiper-button-prev, .swiper-button-next {
+  @apply h-12 w-12 bg-white rounded-full flex items-center justify-center shadow-md duration-300;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  @apply text-black text-lg;
+}
+.swiper-button-prev:hover:after, .swiper-button-next:hover:after {
+  @apply duration-300 text-white;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  @apply bg-primary;
+}
+
+.slider-blogs .swiper-button-next {
+  @apply md:translate-x-[-100%]
+}
+.slider-blogs .swiper-button-prev {
+  @apply md:translate-x-[100%]
+}
+

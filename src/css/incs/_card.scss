@@ -1,0 +1,144 @@
+.x-feature-item {
+  @apply relative px-8 py-12 rounded-md border border-transparent text-center bg-graymain
+  hover:shadow-xl hover:bg-white
+  sm:gap-8 sm:flex transition duration-300;
+}
+.x-feature-item img {
+  @apply mx-auto h-36 w-auto;
+}
+.x-feature-item h3 {
+  @apply mt-4 mb-4 text-2xl font-medium text-black transition dark:text-white;
+}
+.x-feature-item p {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+/* Project Card */
+.x-project-card {
+  @apply h-[17rem] max-w-full w-full relative overflow-hidden bg-graymain flex items-center justify-center mx-auto;
+}
+.x-project-card .x-project-card__img {
+  @apply absolute inset-0 w-full h-full object-cover min-h-full min-w-full;
+}
+.x-project-card .x-project-card__content {
+  @apply h-full w-full flex items-start justify-start text-white relative duration-300 text-center;
+}
+.x-project-card .x-project-card__content > div {
+  @apply py-5 px-3 z-10 relative
+}
+.x-project-card .x-project-card__content:before {
+  content: '';
+  @apply absolute top-0 right-0 h-full w-full bg-gradient-to-b from-black/40 to-transparent z-0;
+}
+.x-project-card:hover .x-project-card__content:before {
+  @apply opacity-100;
+}
+.x-project-card .x-project-card__content h3 {
+  @apply text-xl font-bold text-white
+}
+.x-project-card .x-project-card__content p {
+  @apply text-white;
+}
+
+/* About */
+.x-about-img {
+  @apply relative rounded-xl overflow-hidden h-[27rem] max-w-full min-w-fit;
+}
+.x-about-img:after {
+  content: '';
+  @apply absolute inset-0 w-full h-full bg-gradient-to-t from-secondary to-transparent z-10 opacity-30;
+}
+.x-about-img img {
+  @apply min-h-full min-w-full object-cover z-0;
+}
+
+.us-img {
+  @apply w-full h-full object-cover;
+  max-height: 45rem;
+  min-height: 20rem;
+}
+
+
+.x-achievement-item {
+  @apply flex max-w-full bg-white gap-5 justify-center items-center rounded-3xl duration-300 hover:bg-transparent bg-white hover:text-white ease-in-out border-2 border-white;
+  width: 15.375rem;
+  padding: 2rem;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.x-achievement-item .num {
+  @apply text-3xl font-bold;
+}
+.x-achievement-item .text {
+  @apply text-sm font-light;
+}
+
+.x-blog-item {
+  @apply w-[25rem] max-w-full border border-gray-300 p-4 mx-auto
+}
+.x-blog-item img {
+  @apply max-w-full w-full object-cover object-center;
+  aspect-ratio: 16 / 10;
+}
+.x-blog-item h3 {
+  @apply font-normal leading-8 line-clamp-2 my-5 text-xl text-[#1D1D1F]
+}
+.x-blog-item p {
+  @apply font-light text-sm text-gray-500 line-clamp-4
+}
+
+.x-contact {
+  @apply flex h-32 rounded-xl bg-white hover:scale-90 border-2 duration-300 justify-center items-center;
+}
+
+.slider-blogs .swiper-slide,
+.banner-swiper .swiper-slide,
+.slider-projects .swiper-slide
+{
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.card, .card-img-top {
+  border-radius: 1.5rem !important;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+.x-project-cover {
+  @apply block overflow-hidden w-full max-w-full;
+  aspect-ratio: 8/10;
+}
+.x-project-cover:hover img {
+  @apply scale-125;
+}
+.x-project-cover img {
+  @apply w-full max-w-full object-cover duration-300;
+  aspect-ratio: 8/10;
+}
+
+
+.x-blog-cover {
+  @apply aspect-video block overflow-hidden w-full max-w-full;
+}
+.x-blog-cover:hover img {
+  @apply scale-125;
+}
+.x-blog-cover img {
+  @apply w-full max-w-full object-cover duration-300;
+  aspect-ratio: 8/10;
+}
+
+.x-service-card {
+  @apply flex gap-5 bg-white items-center hover:shadow-none hover:border-primary border-transparent border rounded-lg
+  duration-300 md:px-10 md:py-10 p-5 w-[40rem] mx-auto max-w-full;
+  box-shadow: 0px 0px 5px 5px rgba(204, 204, 204, 0.10)
+}
+.x-shadow {
+  box-shadow: 0px 0px 5px 5px rgba(204, 204, 204, 0.10)
+}

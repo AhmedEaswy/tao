@@ -1,0 +1,44 @@
+select::placeholder, input::placeholder, textarea::placeholder {
+  @apply text-black
+}
+select.select {
+  padding-right: 2.5rem;
+  padding-left: 1rem;
+  background-position-x: 95%;
+  background-position: 95% 50%;
+  background-size: 0.8rem;
+  background-image: url('../img/chevron-down.svg');
+}
+[dir=rtl] select.select {
+  padding-right: 1rem;
+  padding-left: 2.5rem;
+  background-position: 5% 50%;
+}
+
+.x-input {
+  @apply w-full rounded-[14px] text-start border border-[#E0E0E0] p-3 h-[3.125rem] focus:ring-primary hover:ring-primary focus:border-primary hover:border-primary duration-300 ;
+}
+.x-input::placeholder {
+  @apply text-gray-300
+}
+textarea.x-input {
+  height: auto !important;
+  max-height: auto !important;
+  min-height: 6rem;
+}
+.x-input-group label {
+  @apply block mb-2;
+}
+.x-input:focus-visible {
+  @apply outline-none;
+}
+.x-input::-webkit-outer-spin-button,
+.x-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.x-input[type=number] {
+  -moz-appearance: textfield;
+}

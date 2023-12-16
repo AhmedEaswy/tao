@@ -1,0 +1,64 @@
+.x-navbar {
+  @apply bg-transparent shadow-none text-white z-50 fixed duration-300 p-2 border-0 top-0;
+  padding: 0px !important
+}
+.x-navbar a {
+  @apply hover:bg-transparent text-white;
+}
+.x-navbar .nav-item {
+  @apply text-white duration-300 ease-in-out py-2 px-2 rounded-none;
+}
+.x-navbar .nav-item-2 {
+  @apply text-secondary border-secondary border-b-[2px] px-0;
+}
+.x-navbar li a.nav-item.active,
+.x-navbar .nav-item:hover
+{
+  @apply text-primary bg-transparent border-primary;
+  color: theme('colors.primary') !important;
+  background-color: transparent !important;
+}
+.x-navbar .nav-logo {
+  @apply h-20 py-1;
+}
+.x-navbar .nav-tab {
+  @apply md:hidden flex;
+}
+.x-navbar .nav-tab svg {
+  @apply h-6 w-6 text-white
+}
+.menu.menu-horizontal {
+  @apply md:flex-row flex-col p-0 md:gap-5 gap-2
+}
+.x-navbar .x-menu.is-mobile {
+  display: none; /* Initially hide the menu */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+}
+.x-navbar .x-menu.active {
+  @apply flex opacity-100;
+}
+.x-nav-active {
+  @apply bg-primary shadow-xl;
+}
+.x-navbar.x-nav-active li a.nav-item.active,
+.x-navbar.x-nav-active .nav-item:hover
+{
+  @apply text-black bg-transparent border-black;
+  color: theme('colors.black') !important;
+  background-color: transparent !important;
+}
+.x-nav-active .nav-logo {
+  filter: brightness(0) invert(1);
+}
+.x-nav-active .nav-tab svg {
+  @apply text-white;
+}
+.x-navbar:not(.x-nav-active) .x-menu.active.is-mobile {
+  @apply bg-primary;
+}
+.x-navbar:not(.x-nav-active) .x-menu.active.is-mobile li a.nav-item.active,
+.x-navbar:not(.x-nav-active) .x-menu.active.is-mobile li a.nav-item:hover
+{
+  color: theme('colors.black') !important;
+}

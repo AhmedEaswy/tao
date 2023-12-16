@@ -1,0 +1,100 @@
+svg#freepik_stories-sync:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-sync.animated #freepik--background-complete--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-sync.animated #freepik--device-3--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-sync.animated #freepik--device-2--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-sync.animated #freepik--device-1--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-sync.animated #freepik--Character--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-sync.animated #freepik--speech-bubble--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-sync.animated #freepik--Arrows--inject-16 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+#pathSVG [shape-rendering="crispEdges"] > g {
+  opacity: 0;
+}
+
+#pathSVG.active [shape-rendering="crispEdges"] > g:nth-child(1) {
+  animation: fadeIn 0.5s ease-out 0.5s forwards;
+}
+
+#pathSVG.active [shape-rendering="crispEdges"] > g:nth-child(2) {
+  animation: fadeIn 0.5s ease-out 1s forwards;
+}
+
+#pathSVG.active [shape-rendering="crispEdges"] > g:nth-child(3) {
+  animation: fadeIn 0.5s ease-out 1.5s forwards;
+}
+
+#pathSVG.active [shape-rendering="crispEdges"] > g:nth-child(4) {
+  animation: fadeIn 0.5s ease-out 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateY(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateY(5px);
+  }
+}
+
+/* Apply the shake animation to the SVG element */
+#pathSVG.active {
+  animation: shake 10s ease-in-out infinite;
+}
