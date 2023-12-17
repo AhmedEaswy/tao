@@ -18,8 +18,8 @@ module.exports = {
         'gray-dark-2': '#1D1D1D',
       },
       fontFamily: {
-        sans: ['Marhey'],
-        alt: ['Marhey'],
+        sans: ['Tajawal'],
+        alt: ['Tajawal'],
       },
       container: {
         screens: {

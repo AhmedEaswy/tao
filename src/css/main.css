@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&family=Rubik:wght@300&family=Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap');
 
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
@@ -48,7 +48,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Marhey;
+  font-family: Tajawal;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -2516,7 +2516,7 @@ html{
 }
 
 .font-sans{
-  font-family: Marhey;
+  font-family: Tajawal;
 }
 
 .text-2xl{
@@ -2527,6 +2527,11 @@ html{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-base{
@@ -2542,10 +2547,6 @@ html{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.font-black{
-  font-weight: 900;
 }
 
 .font-bold{
@@ -2820,7 +2821,7 @@ h6{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: Marhey;
+  font-family: Tajawal;
 }
 
 h2 + p,
@@ -2831,7 +2832,7 @@ h5 + p{
 }
 
 p{
-  font-family: Marhey;
+  font-family: Tajawal;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(50 71 94 / var(--tw-text-opacity));
@@ -3273,9 +3274,8 @@ p{
 .x-banner__content h1{
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 700;
   line-height: 1.6 !important;
   --tw-text-opacity: 1;
   color: rgb(50 71 94 / var(--tw-text-opacity));
@@ -3283,7 +3283,7 @@ p{
 
 @media (min-width: 768px){
   .x-banner__content h1{
-    font-size: 3rem;
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
@@ -4013,6 +4013,11 @@ svg#freepik_stories-sync.animated #freepik--Arrows--inject-16 {
 
   .md\:text-5xl{
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl{
+    font-size: 4.5rem;
     line-height: 1;
   }
 
