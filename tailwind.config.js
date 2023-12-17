@@ -19,7 +19,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Marhey'],
-        alt: ['Rubik'],
+        alt: ['Marhey'],
       },
       container: {
         screens: {
