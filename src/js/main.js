@@ -147,7 +147,7 @@ if (document.getElementsByClassName('slider-gallery')) {
             prevEl: '.swiper-button-prev',
         },
         // Default parameters
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
         // Responsive breakpoints
         breakpoints: {
