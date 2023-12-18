@@ -120,9 +120,60 @@
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px theme('colors.primary'), 0 0 40px theme('colors.primary'), 0 0 50px theme('colors.primary'), 0 0 60px theme('colors.primary'), 0 0 70px theme('colors.primary'), 0 0 80px theme('colors.primary');
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #DF599CFF, 0 0 50px #DF599CFF, 0 0 60px #DF599CFF, 0 0 70px #DF599CFF;
   }
 }
+
+
+
+.flick {
+  animation: text-flicker 4s linear forwards;
+}
+.flicked {
+  width: 13rem;
+  display: inline-block;
+}
+@keyframes text-flicker {
+  0% {
+    opacity:0;
+  }
+
+  2% {
+    opacity:1;
+  }
+  8% {
+    opacity:0.1;
+  }
+  9% {
+    opacity:1;
+  }
+  12% {
+    opacity:0.1;
+  }
+  20% {
+    opacity:1;
+  }
+  25% {
+    opacity:0.3;
+  }
+  30% {
+    opacity:1;
+  }
+  40% {
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  55% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
 .x-banner__content p {
   @apply text-gray-dark my-5 max-w-3xl mx-auto;
 }

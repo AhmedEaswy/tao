@@ -175,16 +175,20 @@ Fancybox.bind("[data-fancybox]", {
     // Your custom options
 });
 
-if (document.querySelectorAll('#headerType').length) {
-    var typed = new Typed('#headerType', {
-        // strings: ['HELLO OLD FRIEND, <br> <span class="text-primary">WE\'VE MISSED YOU</span>'],
-        stringsElement: '#typeContent',
-        typeSpeed: 50,
-        loop: true,
-    });
+window.onload = function () {
+    let  flicked = false;
+    document.querySelector('.flicked').classList.add('flick');
+    setTimeout(() => {
+        let flick =document.querySelector('.flick');
+        flicked = !flicked;
+        if (flicked) {
+            flick.innerText = 'TAO'
+        } else {
+            flick.innerText = 'WE\'VE'
+        }
+    }, 1800)
+
 }
-
-
 
 
 
