@@ -147,24 +147,27 @@ if (document.getElementsByClassName('slider-gallery')) {
             prevEl: '.swiper-button-prev',
         },
         // Default parameters
-        slidesPerView: 2,
         spaceBetween: 30,
         // Responsive breakpoints
         breakpoints: {
             // when window width is >= 320px
             // when window width is >= 480px
+            450: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
             950: {
                 slidesPerView: 2,
                 spaceBetween: 15
             },
             // when window width is >= 640px
             1180: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 15
             },
             // when window width is >= 640px
             1440: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 15
             }
         }
