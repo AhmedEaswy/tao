@@ -44,7 +44,7 @@
 <!-- START BANNER -->
 <section class="x-banner">
     <div class="x-banner__bg">
-        <img src="src/img/pic-3.jpeg" style="filter: brightness(0.8)" class="x-banner__img active" alt="banner">
+        <img src="src/img/pic-3.jpeg" style="filter: brightness(0.6)" class="x-banner__img active" alt="banner">
 <!--        <img src="src/img/pic-7.jpeg" style="filter: brightness(0.8)" class="x-banner__img" alt="banner">-->
 <!--        <img src="src/img/pic-2.jpeg" style="filter: brightness(0.8)" class="x-banner__img" alt="banner">-->
     </div>
@@ -81,15 +81,19 @@
 
                     <div class="swiper-slide">
                         <div class="x-banner__content max-w-5xl x-banner__content__white">
-                            <h1 class="ltr">
-                                HELLO OLD FRIEND,
-                                <br class="md:block hidden">
-                                <span class="text-secondary">WE'VE MISSED YOU</span>
+                            <h1 class="ltr glow">
+                                <span id="headerType"></span>
                             </h1>
-<!--                            <p>-->
-<!--                                بعد توقف لسنوات رجعنا لكم أكبر مما كنا وبأجوا ٍء ساحرة أكثر مما مضى، في أكثر األماكن حيوية بالرياض-->
-<!--                            </p>-->
-                            <a href="#about" class="btn btn-secondary">
+
+                            <div class="hidden" id="typeContent">
+                                <span>HELLO OLD FRIEND, <br> WE'VE MISSED YOU</span>
+                            </div>
+                            <p>
+                                في نهاية عام واستقبال أعوام...كونوا معنا في ليلة يتوقف فيها الوقت وتعود عقارب الساعة إلى الوراء، لنشهد سويا إعادة افتتاح "تاو -
+                                الرياض"في أجواء خاصة يملؤها الجمال والتفرد، سنعود معكم لنحيي الذكريات ونعيش سويا التجربة
+
+                            </p>
+                            <a href="#about" class="btn btn-primary">
                                 <span>مشاهدة المزيد</span>
                                 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"></path>
@@ -153,8 +157,8 @@
                             عاش الكثير من الذكريات الخاصة معنا.و بعد توقف لسنوات رجعنا لكم أكبر مما كنا وبأجوا ٍء ساحرة أكثر مما مضى، في أكثر األماكن حيوية
                             بالرياض، على طريق األمير تركي األول بمركز البوليڤارد، بطابع مختلف ال مثيل له
                         </p>
-                        <div class="h-80 rounded-[16px] mt-5">
-                            <img src="src/img/pic-7.jpeg" class="h-full w-full object-cover rounded-[16px]" alt="">
+                        <div class="h-80 rounded-[16px] mt-5 overflow-hidden">
+                            <img src="src/img/pic-7.jpeg" class="h-full w-full object-cover rounded-[16px] thumbnail" alt="">
                         </div>
                     </div>
                 </div>
@@ -171,38 +175,94 @@
 <!-- START GALLERY -->
 <section class="pt-32 overflow-hidden">
     <div class="container">
-        <div class="flex flex-row flex-wrap justify-center">
-            <div class="lg:w-1/3 w-1/2 w-full p-2">
-                <a href="src/img/pic-1.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
-                    <img src="src/img/pic-1.jpeg" alt="pic" class="gallery-img">
-                </a>
-            </div>
-            <div class="lg:w-1/3 w-1/2 w-full p-2">
-                <a href="src/img/pic-2.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
-                    <img src="src/img/pic-2.jpeg" alt="pic" class="gallery-img">
-                </a>
-            </div>
-            <div class="lg:w-1/3 w-1/2 w-full p-2">
-                <a href="src/img/pic-3.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
-                    <img src="src/img/pic-3.jpeg" alt="pic" class="gallery-img">
-                </a>
-            </div>
-            <div class="lg:w-1/3 w-1/2 w-full p-2">
-                <a href="src/img/pic-4.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
-                    <img src="src/img/pic-4.jpeg" alt="pic" class="gallery-img">
-                </a>
-            </div>
-            <div class="lg:w-1/3 w-1/2 w-full p-2">
-                <a href="src/img/pic-6.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
-                    <img src="src/img/pic-6.jpeg" alt="pic" class="gallery-img">
-                </a>
-            </div>
-            <div class="lg:w-1/3 w-1/2 w-full p-2">
-                <a href="src/img/pic-7.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
-                    <img src="src/img/pic-7.jpeg" alt="pic" class="gallery-img">
-                </a>
+        <div>
+            <div class="slider-gallery w-full relative">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-1.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-1.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-2.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-2.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-3.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-3.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-4.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-4.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-6.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-6.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-7.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-1.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-4.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-4.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-6.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-6.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="src/img/pic-7.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">
+                            <img src="src/img/pic-1.jpeg" alt="pic" class="">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
+<!--        <div class="flex flex-row flex-wrap justify-center">-->
+<!--            <div class="lg:w-1/3 w-1/2 w-full p-2">-->
+<!--                <a href="src/img/pic-1.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">-->
+<!--                    <img src="src/img/pic-1.jpeg" alt="pic" class="gallery-img">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="lg:w-1/3 w-1/2 w-full p-2">-->
+<!--                <a href="src/img/pic-2.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">-->
+<!--                    <img src="src/img/pic-2.jpeg" alt="pic" class="gallery-img">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="lg:w-1/3 w-1/2 w-full p-2">-->
+<!--                <a href="src/img/pic-3.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">-->
+<!--                    <img src="src/img/pic-3.jpeg" alt="pic" class="gallery-img">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="lg:w-1/3 w-1/2 w-full p-2">-->
+<!--                <a href="src/img/pic-4.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">-->
+<!--                    <img src="src/img/pic-4.jpeg" alt="pic" class="gallery-img">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="lg:w-1/3 w-1/2 w-full p-2">-->
+<!--                <a href="src/img/pic-6.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">-->
+<!--                    <img src="src/img/pic-6.jpeg" alt="pic" class="gallery-img">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="lg:w-1/3 w-1/2 w-full p-2">-->
+<!--                <a href="src/img/pic-7.jpeg" class="x-gallery-item" data-fancybox="معرض الصور">-->
+<!--                    <img src="src/img/pic-7.jpeg" alt="pic" class="gallery-img">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 <!-- END GALLERY -->
@@ -213,17 +273,12 @@
         <div class="badge badge-neutral">تواصل معنا</div>
         <div class="x-title">
             <div>
-                <h2> سعداء بالتواصل معكم</h2>
+                <h2> تاكيد الحجز</h2>
             </div>
-            <p class="max-w-3xl">
-                في نهاية عام واستقبال أعوام...كونوا معنا في ليلة يتوقف فيها الوقت وتعود عقارب الساعة إلى الوراء، لنشهد سويا إعادة افتتاح "تاو -
-                الرياض"في أجواء خاصة يملؤها الجمال والتفرد، سنعود معكم لنحيي الذكريات ونعيش سويا التجربة
-
-            </p>
         </div>
         <div class="grid md:grid-cols-3 grid-cols-1 mt-16">
             <div class=" flex flex-col gap-5">
-                <a href="#" class="flex gap-5 group">
+                <a href="tel:966555555555" class="flex gap-5 group">
                     <span class="h-12 w-12 rounded-full bg-primary/20 text-gray-dark flex justify-center items-center group-hover:border-primary border-2 border-transparent duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                           <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -234,7 +289,7 @@
                         <p class="text-gray-400 font-normal">966-55-555-5555+</p>
                     </div>
                 </a>
-                <a href="#" class="flex gap-5 group">
+                <a href="mailto:info@tao.com" class="flex gap-5 group">
                     <span class="h-12 w-12 rounded-full bg-primary/20 text-gray-dark flex justify-center items-center group-hover:border-primary border-2 border-transparent duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                           <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
@@ -245,7 +300,7 @@
                         <p class="text-gray-400 font-normal">info@tao.com</p>
                     </div>
                 </a>
-                <a href="#" class="flex gap-5 group">
+                <a href="https://maps.app.goo.gl/1PmR61DnRrFcvWbEA" target="_blank" class="flex gap-5 group">
                     <span class="h-12 w-12 rounded-full bg-primary/20 text-gray-dark flex justify-center items-center group-hover:border-primary border-2 border-transparent duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                           <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
@@ -261,13 +316,9 @@
             <div class="md:col-span-2">
                 <div class="bg-white x-shadow rounded-2xl p-6">
                     <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
-                        <div class="x-input-group">
+                        <div class="x-input-group md:col-span-2">
                             <label for="name" class="text-black">الاسم</label>
-                            <input type="text" id="name" class="x-input" placeholder="الاسم">
-                        </div>
-                        <div class="x-input-group">
-                            <label for="name" class="text-black">الموضوع</label>
-                            <input type="text" id="name" class="x-input" placeholder="الاسم">
+                            <input type="text" id="name" class="x-input" required placeholder="الاسم">
                         </div>
                         <div class="x-input-group">
                             <label for="email" class="text-black">البريد الالكتروني</label>
@@ -277,10 +328,6 @@
                             <label for="phone" class="text-black">رقم الهاتف</label>
                             <input type="text" id="phone" class="x-input" placeholder="رقم الهاتف">
                         </div>
-                        <div class="x-input-group md:col-span-2">
-                            <label for="message" class="text-black">محتوي الرسالة</label>
-                            <textarea name="message" id="message" class="x-input" rows="5" placeholder="الرسالة"></textarea>
-                        </div>
                         <div class="md:col-span-2">
                             <button class="btn btn-primary !rounded-[14px]">ارسال</button>
                         </div>
@@ -288,6 +335,10 @@
                 </div>
             </div>
 
+        </div>
+        <div class="x-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.6379579339!2d47.15216403822889!3d24.72483159607086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1702914768269!5m2!1sar!2seg"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
@@ -325,13 +376,13 @@
 <!--                    </a>-->
                 </div>
             </div>
-            <div class="flex justify-center gap-5 flex-wrap">
-                <a href="#" class="text-xl text-primary duration-300 hover:text-primary">الرئيسية</a>
-                <a href="#about" class="text-xl text-white duration-300 hover:text-primary">قصتنا</a>
-                <a href="#contact" class="text-xl text-white duration-300 hover:text-primary">الدعوة</a>
-                <a href="#contact" class="text-xl text-white duration-300 hover:text-primary">تواصل معنا</a>
-            </div>
-            <div class="text-gray-light mt-8 text-center font-normal">&copy;جميع الحقوق محفوظة لصالحنا 2023 </div>
+<!--            <div class="flex justify-center gap-5 flex-wrap">-->
+<!--                <a href="#" class="text-xl text-primary duration-300 hover:text-primary">الرئيسية</a>-->
+<!--                <a href="#about" class="text-xl text-white duration-300 hover:text-primary">قصتنا</a>-->
+<!--                <a href="#contact" class="text-xl text-white duration-300 hover:text-primary">الدعوة</a>-->
+<!--                <a href="#contact" class="text-xl text-white duration-300 hover:text-primary">تواصل معنا</a>-->
+<!--            </div>-->
+            <div class="text-gray-light mt-1 text-center font-normal">&copy;جميع الحقوق محفوظة لصالحنا 2023 </div>
 
         </div>
     </div>
@@ -342,6 +393,7 @@
 <script src="src/plugins/swiper/swiper-bundle.min.js"></script>
 <script src="src/plugins/fancybox/fancybox.umd.js"></script>
 <script src="src/plugins/simpleParallax.min.js"></script>
+<script src="src/plugins/typed.umd.js"></script>
 <script src="src/js/main.js"></script>
 
 </body>

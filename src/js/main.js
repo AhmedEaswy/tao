@@ -30,7 +30,7 @@ new simpleParallax(image, {
 var image2 = document.getElementsByClassName('thumbnail-2');
 new simpleParallax(image2, {
     overflow: true,
-    orientation: 'right left'
+    orientation: 'left'
 });
 
 var image3 = document.getElementsByClassName('svg-1');
@@ -128,9 +128,64 @@ swiper.on('slideChange', function (item) {
     slideImage(item.realIndex);
 });
 
+// Gallery Slider
+if (document.getElementsByClassName('slider-gallery')) {
+    const gallery_swiper = new Swiper('.slider-gallery', {
+        direction: 'horizontal',
+        loop: false,
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        centerInsufficientSlides: true,
+        centeredSlidesBounds: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // Default parameters
+        slidesPerView: 3,
+        spaceBetween: 30,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            // when window width is >= 480px
+            950: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            // when window width is >= 640px
+            1180: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            // when window width is >= 640px
+            1440: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        }
+    });
+}
+
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
 });
+
+if (document.querySelectorAll('#headerType').length) {
+    var typed = new Typed('#headerType', {
+        // strings: ['HELLO OLD FRIEND, <br> <span class="text-primary">WE\'VE MISSED YOU</span>'],
+        stringsElement: '#typeContent',
+        typeSpeed: 50,
+        loop: true,
+    });
+}
+
+
+
 
 
 // // Show SVG Animation

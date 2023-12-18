@@ -62,3 +62,13 @@
   @apply max-w-full rounded-xl object-cover duration-300;
   aspect-ratio: 3/4
 }
+
+.x-map {
+  @apply p-4 mt-10 bg-white shadow-md rounded-2xl;
+}
+.x-map iframe {
+  @apply w-full rounded-xl;
+}
+.typed-cursor {
+  @apply inline text-white;
+}

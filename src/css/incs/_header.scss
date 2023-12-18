@@ -105,10 +105,26 @@
   @apply text-center mx-auto px-5;
 }
 .x-banner__content h1 {
-  @apply text-gray-dark font-bold md:text-7xl text-5xl my-8 !leading-[1.6];
+  @apply text-gray-dark font-light md:text-7xl text-3xl my-8 !leading-[1.4] md:h-48 h-32;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px theme('colors.primary'), 0 0 40px theme('colors.primary'), 0 0 50px theme('colors.primary'), 0 0 60px theme('colors.primary'), 0 0 70px theme('colors.primary'), 0 0 80px theme('colors.primary');
+  }
 }
 .x-banner__content p {
-  @apply text-gray-dark my-10 max-w-3xl mx-auto;
+  @apply text-gray-dark my-5 max-w-3xl mx-auto;
 }
 .x-banner__content.x-banner__content__white h1,
 .x-banner__content.x-banner__content__white p
