@@ -82,16 +82,10 @@
                     <div class="swiper-slide">
                         <div class="x-banner__content max-w-5xl x-banner__content__white">
                             <h1 class="ltr glow">
-                                <span>HELLO OLD FRIEND, <br> <span class="flicked">WE'VE</span> MISSED YOU</span>
+                                <span>HELLO OLD FRIEND, <br> <span class="flicked flick" first="WE'VE" second="TAO"></span> MISSED YOU</span>
                             </h1>
-
-                            <p>
-                                في نهاية عام واستقبال أعوام...كونوا معنا في ليلة يتوقف فيها الوقت وتعود عقارب الساعة إلى الوراء، لنشهد سويا إعادة افتتاح "تاو -
-                                الرياض"في أجواء خاصة يملؤها الجمال والتفرد، سنعود معكم لنحيي الذكريات ونعيش سويا التجربة
-
-                            </p>
-                            <a href="#about" class="btn btn-primary">
-                                <span>مشاهدة المزيد</span>
+                            <a href="#contact" class="btn btn-primary">
+                                <span>دعوة  خاصة</span>
                                 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"></path>
                                 </svg>
@@ -116,6 +110,11 @@
                 <h2><span class="text-primary"></span>
                     #تاو_بالرياض
                 </h2>
+                <p class=" text-lg max-w-2xl rounded-2xl bg-white p-5 mx-auto mb-5 text-black">
+                    في نهاية عام واستقبال أعوام...كونوا معنا في ليلة يتوقف فيها الوقت وتعود عقارب الساعة إلى الوراء، لنشهد سويا إعادة افتتاح "تاو -
+                    الرياض"في أجواء خاصة يملؤها الجمال والتفرد، سنعود معكم لنحيي الذكريات ونعيش سويا التجربة
+        
+                </p>
                 <p>
                     ورجع بروحه القديمة.. مستعد؟
                     <br>
@@ -123,8 +122,8 @@
                 </p>
             </div>
         </div>
-        <div class="grid md:grid-cols-3 grid-cols-1 mt-16">
-            <div class=" flex flex-col gap-5">
+        <div class="grid md:grid-cols-3 grid-cols-1 mt-16 items-center">
+            <div class=" hidden flex-col gap-5">
                 <a href="tel:966555555555" class="flex gap-5 group">
                     <span class="h-12 w-12 rounded-full bg-primary/20 text-gray-dark flex justify-center items-center group-hover:border-primary border-2 border-transparent duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -168,12 +167,15 @@
                             <input type="text" id="name" class="x-input" required placeholder="الاسم">
                         </div>
                         <div class="x-input-group">
-                            <label for="email" class="text-black">البريد الالكتروني</label>
-                            <input type="email" id="email" class="x-input" placeholder="البريد الالكتروني">
-                        </div>
-                        <div class="x-input-group">
                             <label for="phone" class="text-black">رقم الهاتف</label>
                             <input type="text" id="phone" class="x-input" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="x-input-group">
+                            <label for="email" class="text-black">  
+                                البريد الالكتروني
+                                <span class="text-gray-500">(اختياري)</span>
+                            </label>
+                            <input type="email" id="email" class="x-input" placeholder="البريد الالكتروني">
                         </div>
                         <div class="md:col-span-2">
                             <button class="btn btn-primary !rounded-[14px]">سجل  حضروك</button>
@@ -181,7 +183,9 @@
                     </div>
                 </div>
             </div>
-
+            <div class="flex items-center justify-center">
+                <img src="src/img/contact.svg" alt="contact us" class="max-w-full h-96">
+            </div>
         </div>
     </div>
 </section>
@@ -208,7 +212,7 @@
                         <p class="mt-5 line-clamp-6 text-gray-dark">
                             بدأت قصتنا عام 2003 من شارع التحلية.ومن بدايتنا حرصنا على تقديم تجربة مختلفة وفريدة لعمالئنا إلى أن أصبح "تاو" الوجهة األولى لجيل
                             عاش الكثير من الذكريات الخاصة معنا.و بعد توقف لسنوات رجعنا لكم أكبر مما كنا وبأجوا ٍء ساحرة أكثر مما مضى، في أكثر األماكن حيوية
-                            بالرياض، على طريق األمير تركي األول بمركز البوليڤارد، بطابع مختلف ال مثيل له
+                            بالرياض، على طريق األمير تركي الأول بمركز البوليڤارد، بطابع مختلف ال مثيل له
                         </p>
                         <div class="h-80 rounded-[16px] mt-5 overflow-hidden">
                             <img src="src/img/pic-7.jpeg" class="h-full w-full object-cover rounded-[16px] thumbnail" alt="">
@@ -320,10 +324,12 @@
 </section>
 <!-- END GALLERY -->
 
-<div class="pb-32 pt-32">
+<div class="my-32">
     <div class="container mx-auto p-5">
-        <div class="x-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.292570162087!2d46.61303929999999!3d24.751155999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee351fedc218f%3A0x7757bc6cb2d9f55a!2sTAO!5e0!3m2!1sar!2ssa!4v1702935120695!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="text-center flex-wrap justify-center flex-col text-xl max-w-xl border border-gray-100 mx-auto rounded-2xl p-4">
+            <img src="src/img/mobile-map-and-navigation.png" class="h-32 mx-auto block max-w-full" alt="">
+            <p class="my-8">            للوصول لموقع حفل الافتتاح اضغط علي الرابط            </p>
+            <a href="https://maps.app.goo.gl/HEvF63RLZRfzVi7DA?g_st=iw" target="_blank" class="btn btn-primary">موقع حفل الافتتاح</a>
         </div>
     </div>
 </div>

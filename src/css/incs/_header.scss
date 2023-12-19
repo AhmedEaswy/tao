@@ -105,7 +105,7 @@
   @apply text-center mx-auto px-5;
 }
 .x-banner__content h1 {
-  @apply text-gray-dark font-light md:text-7xl text-3xl my-8 !leading-[1.4] md:h-48 h-32;
+  @apply text-gray-dark font-light md:text-7xl text-4xl my-8 !leading-[1.4] md:h-48 h-32;
 }
 .glow {
   color: #fff;
@@ -127,11 +127,53 @@
 
 
 .flick {
-  animation: text-flicker 4s linear forwards;
+  animation: text-flicker 4s linear infinite;
 }
 .flicked {
-  width: 13rem;
+  @apply md:w-[13rem] w-[6rem];
   display: inline-block;
+}
+.flick:before {
+  content: '';
+  animation: content-flicker 4s linear infinite;
+}
+@keyframes content-flicker {
+  0% {
+    content: 'WE\'VE';
+  }
+  2% {
+    content: 'WE\'VE';
+  }
+  8% {
+    content: 'WE\'VE';
+  }
+  9% {
+    content: 'WE\'VE';
+  }
+  12% {
+    content: 'WE\'VE';
+  }
+  20% {
+    content: 'WE\'VE';
+  }
+  25% {
+    content: 'WE\'VE';
+  }
+  30% {
+    content: 'WE\'VE';
+  }
+  41% {
+    content: 'TAO';
+  }
+  50% {
+    content: 'TAO';
+  }
+  55% {
+    content: 'TAO';
+  }
+  100% {
+    content: 'TAO';
+  }
 }
 @keyframes text-flicker {
   0% {

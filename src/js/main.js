@@ -178,21 +178,6 @@ Fancybox.bind("[data-fancybox]", {
     // Your custom options
 });
 
-window.onload = function () {
-    let  flicked = false;
-    document.querySelector('.flicked').classList.add('flick');
-    setTimeout(() => {
-        let flick =document.querySelector('.flick');
-        flicked = !flicked;
-        if (flicked) {
-            flick.innerText = 'TAO'
-        } else {
-            flick.innerText = 'WE\'VE'
-        }
-    }, 1800)
-
-}
-
 
 
 // // Show SVG Animation
