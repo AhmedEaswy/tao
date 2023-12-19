@@ -2144,6 +2144,10 @@ html{
   height: 100%;
 }
 
+.h-52{
+  height: 13rem;
+}
+
 .max-h-full{
   max-height: 100%;
 }
